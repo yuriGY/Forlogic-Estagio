@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 1.5em;
@@ -29,8 +30,18 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(77, 76, 76);
             color: white;
+        }
+
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(77, 76, 76);
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
         }
 
         .num{
@@ -40,7 +51,7 @@
 </head>
 <body>
     <h1>
-        Uso de tabelas grands
+        Uso de tabelas grandes
     </h1>
     <!--
             ANATOMIA DE TABELAS GRANDES
